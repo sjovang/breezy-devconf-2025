@@ -5,13 +5,12 @@ Demo material for my session at https://breezydevconf.fi
 ## Architecture
 
 ```mermaid
-classDiagram
-    ResourceGroup
-    VirtualNetwork <-- ResourceGroup
-    NatGateway <|-- VirtualNetwork
-    NatGateway <|-- ResourceGroup
-    Subnet-Frontend <|-- VirtualNetwork
-    Subnet-Backend <|-- VirtualNetwork
-    Subnet-Frontend <|-- NetworkSecurityGroup
-    Subnet-Backend <|-- NetworkSecurityGroup
+flowchart LR
+    ResourceGroup --> VirtualNetwork
+    ResourceGroup --> NatGateway
+    ResourceGroup --> NetworkSecurityGroup
+    VirtualNetwork --> Subnet-Frontend
+    VirtualNetwork --> Subnet-Backend
+    Subnet-Frontend --> NetworkSecurityGroup
+    Subnet-Backend --> NetworkSecurityGroup 
 ```
