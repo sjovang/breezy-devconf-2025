@@ -6,11 +6,11 @@ Demo material for my session at https://breezydevconf.fi
 
 ```mermaid
 flowchart LR
-    ResourceGroup --> VirtualNetwork
-    ResourceGroup --> NatGateway
-    ResourceGroup --> NetworkSecurityGroup
-    VirtualNetwork --> Subnet-Frontend
-    VirtualNetwork --> Subnet-Backend
+    ResourceGroup <-- VirtualNetwork
+    ResourceGroup <-- NatGateway
+    ResourceGroup <-- NetworkSecurityGroup
+    VirtualNetwork <-- Subnet-Frontend
+    VirtualNetwork <-- Subnet-Backend
     Subnet-Frontend --> NetworkSecurityGroup
     Subnet-Backend --> NetworkSecurityGroup 
 ```
