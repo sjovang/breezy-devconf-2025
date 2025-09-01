@@ -12,5 +12,7 @@ flowchart LR
     Subnet-Frontend --> VirtualNetwork
     Subnet-Backend --> VirtualNetwork
     Subnet-Frontend --> NetworkSecurityGroup
-    Subnet-Backend --> NetworkSecurityGroup 
+    Subnet-Backend --> NetworkSecurityGroup
+    Subnet-Frontend --> NatGateway
+    Subnet-Backend --> NatGateway
 ```
