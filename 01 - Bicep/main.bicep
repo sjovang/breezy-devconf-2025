@@ -1,7 +1,7 @@
 targetScope = 'subscription'
 
 @description('The name of the environment')
-param environmentName string = 'breezy-bicep-demo'
+param environmentName string = 'breezy-devconf-bicep-demo'
 
 @description('The timestamp of the last deployment update. This can only be set as a runtime param and not a var. Users should not modify this value.')
 param lastDeploymentUpdate string = utcNow('d')
@@ -35,6 +35,3 @@ module network 'modules/network.bicep' = {
     tags: tags
   }
 }
-
-// just test what this object actually contains
-output deploymentOutput object = deployment()
