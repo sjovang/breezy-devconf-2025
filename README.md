@@ -9,6 +9,8 @@ flowchart LR
     VirtualNetwork --- ResourceGroup
     NatGateway --- ResourceGroup 
     NetworkSecurityGroup --- ResourceGroup
+    NetworkManager --- ResourceGroup
+    VirtualNetwork --> NetworkManager
     Subnet-Frontend --> VirtualNetwork
     Subnet-Backend --> VirtualNetwork
     Subnet-Frontend --> NetworkSecurityGroup
