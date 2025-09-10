@@ -25,7 +25,7 @@ resource resourceGroup 'Microsoft.Resources/resourceGroups@2025-04-01' = {
   location: deployment().location
   tags: tags
 }
-
+/* 
 module network 'modules/network.bicep' = {
   scope: resourceGroup
   name: '${deployment().name}-network'
@@ -35,3 +35,4 @@ module network 'modules/network.bicep' = {
     tags: tags
   }
 }
+ */
