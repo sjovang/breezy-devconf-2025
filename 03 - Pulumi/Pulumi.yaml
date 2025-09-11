@@ -1,4 +1,4 @@
-name: breezy-devconf-pulumi-demo
+name: demo
 description: Small demo to show how Pulumi can deploy Azure infrastructure
 runtime:
   name: python
